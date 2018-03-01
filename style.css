@@ -29,7 +29,7 @@ body {
   color: rgb(22, 142, 211);
 }
 
-.headline li:hover {
+.headline a:hover {
   opacity: 0.5;
   cursor: pointer;
 }
@@ -48,6 +48,10 @@ body {
   font-size: 15px;
   height: 30px;
   width: 130px;
+}
+
+.btn:focus, .button:focus {
+  outline: none;
 }
 
 .get-started-btn {
@@ -69,7 +73,7 @@ body {
   height: 50px;
   font-size: 16px;
   letter-spacing: 1px;
-  margin-bottom: 100px;
+  margin-bottom: 140px;
   width: 150px;
 }
 
@@ -182,4 +186,37 @@ body {
   letter-spacing: 1px;
   margin-right: 20px;
   width: inherit;
+}
+
+.dim {
+  background-color: grey;
+  height: 100%;
+  left: 0px;
+  opacity: 0.4;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+}
+
+.modal-container {
+  height: 100%;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+
+.modal {
+  background-color: white;
+  height: 80%;
+  margin: auto;
+  position: relative;
+  width: 50%;
+  text-align: center;
+  z-index: 2;
+}
+
+.cursor {
+  cursor: pointer;
 }
